@@ -22,8 +22,8 @@ modules:
   - name: riftshare
     sources:
       - type: archive
-        url: "https://github.com/achhabra2/riftshare/releases/download/v0.1.7/riftshare-vendored.tar.gz"
-        sha256: bc1f55dabc376b9c73d0f0f3386fb48ca5fc9a354eb5d178e1178b30e948ba1e
+        url: "https://github.com/achhabra2/riftshare/releases/download/v0.1.8/riftshare-vendored.tar.gz"
+        sha256: 06a4c7bba32de904589166053b7a243d2239331a9253b450c084b438653167e2
         strip-components: 1
     buildsystem: simple
     build-commands:
