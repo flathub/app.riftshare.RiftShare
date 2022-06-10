@@ -12,7 +12,8 @@ command: RiftShare
 finish-args:
   # Window Manager
   - '--share=ipc'
-  - '--socket=x11'
+  - '--socket=wayland'
+  - '--socket=fallback-x11'
   - '--device=dri'
   - '--share=network'
   - '--filesystem=home'
@@ -21,8 +22,8 @@ modules:
   - name: riftshare
     sources:
       - type: archive
-        url: "https://github.com/achhabra2/riftshare/releases/download/v0.1.8.1/riftshare-vendored-hotfix.tar.gz"
-        sha256: bc8885be55b4ca5b52745ab9cc47dfd0daae3a2f185c20fe6c55240342ca52ba
+        url: "https://github.com/achhabra2/riftshare/releases/download/v0.1.9/riftshare-vendored.tar.gz"
+        sha256: 75d477933e93cfa448cd467d7508381922436c3a327b3b178a1549036e7cb5ac
         strip-components: 1
     buildsystem: simple
     build-commands:
